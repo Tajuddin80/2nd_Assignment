@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", serif;
+}
+#container {
+  max-width: 90%;
+  margin: auto;
+}
+:root {
+  --orange: rgb(254, 163, 1);
+  --skyblue: rgb(1, 172, 253);
+  --fade_blue: rgb(5, 212, 223);
+  --purple: rgb(135, 0, 255);
+  --btn_story_blue: rgb(60, 216, 232);
+  --btn_story_green: rgb(149, 178, 38);
+  --btn_story_purple: rgb(93, 88, 240);
+}
+body {
+  background-image: white;
+}
+
+/* nav design starts here */
+
+.left_nav {
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+nav .left_nav img {
+  width: 62px;
+  height: 62px;
+}
+.nav_bar {
+  align-items: center;
+}
+nav .school {
+  font-weight: 700;
+  font-size: 32px;
+}
+nav .middle_nav ul li {
+  list-style: none;
+}
+nav .middle_nav ul li a {
+  font-size: 20px;
+font-weight: 500;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+nav .middle_nav ul li:nth-child(1) a {
+  color: var(--orange);
+}
+nav .middle_nav ul li:nth-child(2) a {
+  color: var(--skyblue);
+}
+
+nav .middle_nav ul li:nth-child(3) a {
+  color: var(--fade_blue);
+}
+nav .middle_nav ul li:nth-child(4) a {
+  color: var(--purple);
+}
+nav .middle_nav ul li a:nth-child(1):hover {
+  color: black;
+  background-color: rgb(255, 255, 176);
+}
+nav .middle_nav ul {
+  display: flex;
+  gap: 30px;
+}
+.button_nav button {
+  padding: 10px;
+  width: 197px;
+  height: 50px;
+  background-color: var(--orange);
+  border-radius: 12px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+font-weight: 600;
+}
+.button_nav button:hover{
+  background-color: rgb(181, 224, 255);
+  color: var(--purple);
+}
+.nav_bar {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* nav design ends here */
+
+.hero {
+  display: flex;
+
+/* White */
+background: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero_text_big {
+  width: 640px;
+  height: 331px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61px;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero .hero_text_big .first{
+  color: var(--orange);
+}
+.hero .hero_text_big .hero_blue{
+  color: var(--skyblue);
+}
+.hero .hero_text_big .small_text p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.hero button {
+  font-size: 20px;
+font-weight: 700;
+  margin-top: 20px;
+  width: 197px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+.hero button:hover{
+  background-color: rgb(203, 233, 255);
+  color: var(--skyblue);
+}
+
+
+/* hero section ends here */
+
+#classes{
+  background-image: url(./assets/bg.png);
+}
+
+.standard{
+
+font-size: 46px;
+font-weight: 700;
+line-height: 57.5px;
+letter-spacing: 0%;
+text-align: center;
+}
