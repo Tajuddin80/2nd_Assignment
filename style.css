@@ -121,11 +121,6 @@ nav .middle_nav ul {
   justify-content: space-between;
   gap: 50px;
 }
-
-.hero_img img {
-  /* width: 100%;
-  height: auto; */
-}
 .hero_text_big {
   width: 640px;
   height: 330px;
