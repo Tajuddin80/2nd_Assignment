@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuery.css">
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <title>Kids-Education</title>
   </head>
@@ -12,21 +13,30 @@
       <header>
         <nav class="nav_bar">
           <div class="left_nav">
-            <span class="bag"><img src="./assets/logo.png" alt="" /></span
+            <span class="bag"><a href="#"><img src="./assets/logo.png" alt="" /></a></span
             ><span class="school">SCHOOL</span>
           </div>
           <div class="middle_nav">
             <ul>
               <li><a href="#home">Home</a></li>
-              <li><a href="#stories">About</a></li>
-              <li><a href="#home">Facilities</a></li>
+              <li><a href="#footer">About</a></li>
+              <li><a href="#stories">Facilities</a></li>
               <li><a href="#classes">Admission</a></li>
             </ul>
           </div>
-          <div class="button_nav"><button>Contact</button></div>
+
+
+
+          <div class="button_nav"><span class="hamburger"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+            <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg></a></span><button>Contact</button>    </div>
+     
         </nav>
+        <hr id="hr" style="color: rgb(254, 163, 1);">
       </header>
-      <main>
+     
         <section id="home">
           <div class="hero">
             <div class="hero_text_big">
@@ -35,11 +45,12 @@
               <p>age <span class="hero_blue">towards vision</span></p>
               <div class="small_text">
                 <p>
-                  With the courage, Confidence, Creativity and Compassion to
+                  With the courage, Confidence, Creativity and Compassion <br> to
                   make their Unique Contribution in a Diverse and Dynamic World.
                 </p>
               </div>
-              <button class="button_hero">Enroll Now</button>
+              <div class="hero_button"><button class="button_hero">Enroll Now</button></div>
+              
             </div>
             <div class="hero_img">
               <img src="./assets/hero-kids.png" alt="" />
@@ -47,13 +58,20 @@
           </div>
         </section>
       </div>
-        <section id="classes">
+
+    </div>
+
+
+        <div id="classes">
+
         <div class="container">
           <div class="standard">
             <p>Standard Curriculum</p>
           </div>
 
           <div class="class_cards">
+
+
             <div class="first_card cards">
               <img src="./assets/kinder.png" alt="" />
               <p class="big">Kinder (3-6) Years</p>
@@ -61,10 +79,12 @@
                 Cum sociis natoque penatibus et magnis dis parturient montes,
                 nascetur ridiculus mu sdis parturient
               </p>
-              <a href="" class="read_more" style="color: rgb(5, 212, 223)"
+              <a href="#home" class="read_more" style="color: rgb(5, 212, 223)"
                 >Read More</a
               >
             </div>
+
+
             <div class="second_card cards">
               <img src="./assets/elementary.png" alt="" />
               <p class="big">Elementary School</p>
@@ -72,7 +92,7 @@
                 Cum sociis natoque penatibus et magnis dis parturient montes,
                 nascetur ridiculus mu sdis parturient
               </p>
-              <a href="" class="read_more" style="color: rgb(254, 163, 1)"
+              <a href="#home" class="read_more" style="color: rgb(254, 163, 1)"
                 >Read More</a
               >
             </div>
@@ -83,46 +103,160 @@
                 Cum sociis natoque penatibus et magnis dis parturient montes,
                 nascetur ridiculus mu sdis parturient
               </p>
-              <a href="" class="read_more" style="color: rgb(135, 0, 255)"
+              <a href="#home" class="read_more" style="color: rgb(135, 0, 255)"
                 >Read More</a
               >
             </div>
           </div>
+
           <div class="class_button">
             <button class="left">&lt;</button>
             <button class="right">&gt;</button>
           </div>
         </div>
-        </section>
+
+      </div>
 
 
 
 
-
-        <section id="stories">
-          <div class="stories container">
-          <div class="our_stories">
-            <p>Our Stories</p>
-          </div>
-          <div class="stories_container">
-            <div class="gallery_cards">
-              <div class="box_1">
-                <div class="img">
-                  <img src="./assets/story-1.png" alt="" />
-                </div>
-                <div class="story_words"></div>
-              </div>
-              <div class="box_2"></div>
-              <div class="box_3"></div>
-              <div class="box_4"></div>
-              <div class="box_5"></div>
+        <div id="stories">
+          <div  class="stories container">
+            <div class="our_stories">
+              <p>Our Stories</p>
             </div>
+          <!-- <div class="stories_container"> -->
+
+            <div class="gallery_cards container">
+
+
+              <div class="box  box_1">
+             <img src="./assets/story-1.png" alt="">
+                <div class="floating_button"><p>November 19, 2019
+                  </p></div>
+                <div class="story_words"><p class="bold">A fun toddler coloring training on classroom</p>
+                <p class="normal">Beautiful branding for changes by Never Now in Australia.
+                  changes is a platform for open discussion in an inclusive and
+                  collaborative environment, providing the...</p></div>
+              </div>
+
+
+           
+              <div class="box box_2"><img src="./assets/story-2.png" alt="" >
+                <div class="floating_button"><p style="background-color:rgb(149, 178, 38);">November 19, 2019
+                </p></div>
+                <div class="small_story_bold">
+                <p>Find out if a school fits the
+                  family's needs</p>
+              </div></div>
+
+
+              <div class="box box_3"><img src="./assets/story-3.png" alt="" >
+                <div class="floating_button"><p style="background-color: rgb(93, 88, 240);">November 19, 2019
+                </p></div><div class="small_story_bold">
+                <p>Find out if a school fits the
+                  family's needs</p>
+              </div></div>
+
+
+              <div class="box box_4"><img src="./assets/story-4.png" alt=""><div class="floating_button"><p style="background-color:rgb(149, 178, 38);">September 10, 2019
+              </p></div><div class="small_story_bold">
+                <p>Find out if a school fits the
+                  family's needs</p>
+              </div></div>
+
+
+              <div class="box box_5"><img src="./assets/story-5.png" alt=""><div class="floating_button"><p style="background-color:rgb(149, 178, 38);">July 19, 2019
+              </p></div><div class="small_story_bold">
+                <p>Find out if a school fits the
+                  family's needs</p>
+              </div></div>
+
+
+
+
+
+
+              <div class="extra_boxes">
+                <div class="box box_6"><img src="./assets/story-2.png" alt="" >
+                  <div class="floating_button"><p style="background-color:rgb(149, 178, 38);">November 19, 2019
+                  </p></div>
+                  <div class="small_story_bold">
+                  <p>Find out if a school fits the
+                    family's needs</p>
+                </div></div>
+  
+  
+                <div class="box box_7"><img src="./assets/story-3.png" alt="" >
+                  <div class="floating_button"><p style="background-color: rgb(93, 88, 240);">November 19, 2019
+                  </p></div><div class="small_story_bold">
+                  <p>Find out if a school fits the
+                    family's needs</p>
+                </div></div>
+  
+  
+                <div class="box box_8"><img src="./assets/story-4.png" alt=""><div class="floating_button"><p style="background-color:rgb(149, 178, 38);">September 10, 2019
+                </p></div><div class="small_story_bold">
+                  <p>Find out if a school fits the
+                    family's needs</p>
+                </div></div>
+  
+  
+                <div class="box box_9"><img src="./assets/story-5.png" alt=""><div class="floating_button"><p style="background-color:rgb(149, 178, 38);">July 19, 2019
+                </p></div><div class="small_story_bold">
+                  <p>Find out if a school fits the
+                    family's needs</p>
+                </div></div>
+              </div>
+
+
+
+
+
+
+
+
+            
           </div>
-          <div class="see_all"><button>View All</button></div>
+          <div id="view_all" ><button>View All</button></div>
         </div>
-        </section>
-      </main>
-      <footer></footer>
+      </div>
+   
+      <footer id="footer">
+        <div class="footer_container">
+        <div class="footer">
+          <div class="footer_left">
+            <div class="footer_left_logo"><span><img src="./assets/logo.png"
+            style="background-color: white; padding: 3px; border-radius: 5px;"  alt=""></span>
+            <span class="footer_big_word">Kids </span><br>
+              <span class="footer_big_word" id="edu">Education</span></div>
+            <div class="footer_left_words"><p>
+              Wellcome to our school  <br> join us to explore a nice journey <br> All you need is to send a message.
+
+
+            </p></div>
+          </div>
+          <div class="footer_mid">
+            <ul>
+              <li style="margin-bottom: 20px;"><a href="#" >About School</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Facilities</a></li>
+              <li><a href="#">Admission</a></li>
+            </ul>
+          </div>
+<div class="footer_right">
+  <p style="color: rgb(255, 255, 255);">Keep In Touch</p>
+  <ul>
+    <li><a href="#"><img src="./assets/fb.png" alt="" ></a></li>
+    <li><a href="#"><img src="./assets/dribble.png" alt="" ></a></li>
+    <li><a href="https://x.com/TajuddinCLONE" target="_blank"><img src="./assets/twitter.png" alt="" ></a></li>
+    <li><a href="#"><img src="./assets/google+.png" alt="" ></a></li>
+  </ul>
+</div>
+        </div>
+      </footer>
+      <marquee style="background-color: bisque; color: black; width: 100vw; font-size: x-large; padding: 5px; border: 1px solid cornflowerblue; font-weight: 700; margin : 40px 0px 40px 0px;" scrollamount="15" behavior="alternate" direction="right">Assignment 2 ends here</marquee>
     </div>
   </body>
 </html>
